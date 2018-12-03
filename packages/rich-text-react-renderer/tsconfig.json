@@ -7,11 +7,10 @@
     "typeRoots": [
       "../../node_modules/@types",
       "node_modules/@types",
-      "src/typings",
+      "src/typings"
     ],
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "skipLibCheck": true
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }
