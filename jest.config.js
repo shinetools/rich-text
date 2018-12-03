@@ -4,17 +4,11 @@ module.exports = {
     'packages/**/!(rollup.config).{ts}',
     '!**/node_modules/**',
   ],
-  roots: [
-    'packages/',
-  ],
-  moduleFileExtensions: [
-    'ts',
-    'js',
-  ],
+  roots: ['packages/'],
+  moduleFileExtensions: ['tsx', 'ts', 'js'],
   transform: {
+    '^.+\\.tsx$': 'ts-jest',
     '^.+\\.ts$': 'ts-jest',
   },
-  testMatch: [
-    '**/*\.test.ts',
-  ]
+  testMatch: ['**/*.test.ts', '**/*.test.tsx'],
 };
