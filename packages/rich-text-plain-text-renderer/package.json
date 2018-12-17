@@ -1,8 +1,8 @@
 {
   "name": "@contentful/rich-text-plain-text-renderer",
-  "version": "12.0.0",
+  "version": "12.1.2",
   "main": "dist/rich-text-plain-text-renderer.es5.js",
-  "typings": "dist/types/rich-text-plain-text-renderer.d.ts",
+  "typings": "dist/types/index.d.ts",
   "files": [
     "dist"
   ],
@@ -18,12 +18,12 @@
     "access": "public"
   },
   "scripts": {
-    "prebuild": "rimraf dist",
     "build": "tsc --module commonjs && rollup -c rollup.config.js",
+    "prebuild": "rimraf dist",
     "start": "tsc && rollup -c rollup.config.js -w"
   },
   "dependencies": {
-    "@contentful/rich-text-types": "^12.0.0"
+    "@contentful/rich-text-types": "^12.1.2"
   },
   "devDependencies": {
     "jest": "^23.6.0",
@@ -35,6 +35,6 @@
     "rollup-plugin-sourcemaps": "^0.4.2",
     "rollup-plugin-typescript2": "^0.17.2",
     "ts-jest": "^23.10.4",
-    "typescript": "^2.9.2"
+    "typescript": "^3.2.2"
   }
 }

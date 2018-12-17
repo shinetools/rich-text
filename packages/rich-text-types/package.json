@@ -1,6 +1,6 @@
 {
   "name": "@contentful/rich-text-types",
-  "version": "12.0.0",
+  "version": "12.1.2",
   "main": "dist/rich-text-types.es5.js",
   "typings": "dist/types/index.d.ts",
   "files": [
@@ -24,6 +24,7 @@
     "generate-json-schema": "ts-node -O '{\"module\": \"commonjs\"}' ./tools/jsonSchemaGen"
   },
   "devDependencies": {
+    "core-js": "^2.5.7",
     "faker": "^4.1.0",
     "jest": "^23.6.0",
     "rimraf": "^2.6.2",
@@ -36,7 +37,7 @@
     "rollup-plugin-typescript2": "^0.17.2",
     "ts-jest": "^23.10.4",
     "ts-node": "^7.0.1",
-    "typescript": "^2.9.2",
+    "typescript": "^3.2.2",
     "typescript-json-schema": "^0.33.0"
   }
 }
